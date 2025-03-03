@@ -1,0 +1,42 @@
+[
+    {
+      "inputs": [
+        { "internalType": "uint256", "name": "_value", "type": "uint256" }
+      ],
+      "name": "storeValue",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "_str", "type": "string" }
+      ],
+      "name": "storeString",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "_addr", "type": "address" }
+      ],
+      "name": "getValue",
+      "outputs": [
+        { "internalType": "uint256", "name": "", "type": "uint256" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "address", "name": "_addr", "type": "address" }
+      ],
+      "name": "getString",
+      "outputs": [
+        { "internalType": "string", "name": "", "type": "string" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
