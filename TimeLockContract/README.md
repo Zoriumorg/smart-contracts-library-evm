@@ -10,7 +10,7 @@ A simple Ethereum smart contract that locks Ether (ETH) for a specified period, 
 - Only the designated beneficiary can withdraw funds.
 - Provides functions to check the contract balance and remaining time.
 - Emits events for locking and withdrawing funds.
-- - **Locking Funds:** The contract deployer sends Ether to be locked until a future timestamp.
+- **Locking Funds:** The contract deployer sends Ether to be locked until a future timestamp.
 - **Time-based Withdrawal:** The beneficiary can withdraw the funds only after the specified release time.
 - **Balance Checking:** Anyone can check the contract balance.
 - **Time Remaining:** The contract provides a function to check how much time is left before withdrawal is allowed.
