@@ -24,9 +24,23 @@ This repository is organized into folders, each containing a specific type of sm
   A basic dApp example showcasing storage and retrieval of data using a smart contract.  
  
 - **`voting-contract`**  
-  A contract implementing a voting system, allowing users to cast votes and tally results on-chain.  
+  A contract implementing a voting system, allowing users to cast votes and tally results on-chain.
 
-**Note:** The `.DS_Store` file is a macOS system file and not part of the functional contracts.
+- **`timelock-contract`**  
+  A contract that locks funds or actions for a specified duration before they can be executed. Useful for delayed transactions or governance.
+
+- **`erc20-basic-token`**  
+  A standard ERC20 token implementation with basic functionalities like transfer, approve, and balance tracking.
+
+- **`crowdsale-contract`**  
+  A contract for conducting a fixed-rate token sale, allowing users to buy ERC20 tokens with ETH.
+
+- **`multisig-wallet`**  
+  A multi-signature wallet requiring multiple approvals for transactions, enhancing security for fund management.
+
+**Note:** The `.DS_Store` file is a macOS system artifact and not part of the functional contracts.
+
+---
 
 ## Getting Started
 
