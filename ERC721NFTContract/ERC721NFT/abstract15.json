@@ -1,0 +1,19 @@
+{
+    "name": "abstract15",
+    "description": "A vibrant abstract painting featuring multiple colorful strokes, showcasing the dynamic interplay of colors and forms.",
+    "image": "https://ipfs.io/ipfs/bafybeiavfkjbdrq73hoeylmgnqqdrgxas6icucjfincg4kwtlujli6ipr4/abstract15.jpg",
+    "attributes": [
+      {
+        "trait_type": "Style",
+        "value": "Abstract"
+      },
+      {
+        "trait_type": "Color Complexity",
+        "value": "High"
+      },
+      {
+        "trait_type": "Stroke Type",
+        "value": "Multiple"
+      }
+    ]
+  }
