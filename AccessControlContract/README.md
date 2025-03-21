@@ -51,7 +51,8 @@ The `AccessControl.sol` contract includes:
 1. **Check Initial Admin**
    - Copy the ADMIN hash: `0xdf8b4c520ffe197c5343c6f5aec59570151ef9a492f2c624fd45ddde6135ec42`
    - Use "roles" function with ADMIN hash and deployer address
-   - Expected output: `true`
+   - Expected output: `true`.
+     
    ![Initial Admin Check](./public-admin-user.png)
 
 2. **Grant Role**
