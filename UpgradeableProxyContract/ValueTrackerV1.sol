@@ -5,7 +5,7 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
-contract ValueTrackerV2 is Initializable, UUPSUpgradeable, OwnableUpgradeable {
+contract ValueTrackerV1 is Initializable, UUPSUpgradeable, OwnableUpgradeable {
     uint256 public trackedValue;
     uint256 public incrementCount; // New feature in V2
 
