@@ -7,7 +7,9 @@ This project includes two Solidity smart contracts:
 These contracts are designed to be deployed and tested using the Remix IDE on a test network (e.g., Sepolia).
 
 ![My screenshot](./TokenA.png)
+
 ![My screenshot](./TokenB.png)
+
 ![My screenshot](./tokencontract.png)
 ---
 
