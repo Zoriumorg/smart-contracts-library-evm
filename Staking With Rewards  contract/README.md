@@ -2,6 +2,7 @@
 
 This repository contains a Solidity-based Staking With Rewards contract, allowing users to stake ERC20 tokens and earn proportional rewards in another ERC20 token. The implementation is modular, with separate files for the ERC20 interface, token implementation, and staking logic.
 
+
 ## Overview
 
 The StakingRewards contract enables:
@@ -29,6 +30,13 @@ The system uses two ERC20 tokens:
   - Tracks staked amounts, calculates rewards based on time and stake proportion, and distributes rewards.
   - Includes owner-only functions to set reward duration and notify reward amounts.
 
+
+**Screenshot of Deployed Contracts**:
+- ![Deployed Contracts](./Stackingtoken.png)  
+- ![Deployed Contracts](./Reward%20token.png)
+- ![Deployed Contracts](./stackingcontract%201.png)  
+- ![Deployed Contracts](./stacking%20contract2.png)   
+- 
 ## Prerequisites
 
 - **Remix IDE**: Use [Remix](https://remix.ethereum.org/) for compiling, deploying, and testing.
