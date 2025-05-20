@@ -1,76 +1,133 @@
+
 # Smart Contracts Library (EVM) - Zoriumorg
 
-Welcome to the **Smart Contracts Library (EVM)** repository by Zoriumorg! This is an open-source collection of Solidity smart contracts designed for the Ethereum Virtual Machine (EVM). Whether you're a beginner learning blockchain development or an experienced developer building decentralized applications (dApps), this repository provides a variety of contracts to explore, use, and contribute to.
+Welcome to the **Smart Contracts Library (EVM)** repository by Zoriumorg! This open-source collection of Solidity smart contracts is designed for the Ethereum Virtual Machine (EVM). Whether you're a beginner exploring blockchain development or an experienced developer building decentralized applications (dApps), this repository offers a wide range of reusable, well-documented contracts to study, deploy, or integrate into your projects.
 
-The goal of this project is to create a reusable, well-documented library of smart contracts that anyone can freely access, modify, and deploy. Feel free to dive into the code, submit pull requests, or suggest new contract ideas!
+Our mission is to provide a robust and accessible library of smart contracts that adhere to Solidity best practices, fostering innovation in decentralized ecosystems. Contributions, suggestions, and feedback are warmly welcomed!
 
 ## Repository Structure
 
-This repository is organized into folders, each containing a specific type of smart contract or dApp example. Below is an overview of the current contents:
+The repository is organized into folders, each containing a specific smart contract or dApp example. Below is the complete list of contracts, grouped by category for ease of navigation:
 
 ### Decentralized Applications (dApps)
 - **`hello-world-dapp`**  
-  A basic decentralized application (dApp) example to get started with Solidity and EVM development.  
+  A beginner-friendly dApp to introduce Solidity and EVM development basics.  
 - **`multi-storage-dapp`**  
-  A dApp demonstrating how to store and manage multiple data types or records on the blockchain.  
+  A dApp for storing and managing multiple data types or records on the blockchain.  
 - **`reown-wallet-connect`**  
-  A contract integrating wallet connectivity (e.g., for use with tools like WalletConnect) to enable secure user interactions.  
+  A contract enabling wallet connectivity (e.g., WalletConnect) for secure user interactions with dApps.  
 - **`simple-storage-dapp`**  
-  A basic dApp example showcasing storage and retrieval of data using a smart contract.  
+  A basic dApp demonstrating data storage and retrieval using a smart contract.  
 - **`simple-storage-number`**  
-  A simple contract for storing and retrieving a single number value on the blockchain.  
+  A minimal contract for storing and retrieving a single numerical value on-chain.  
 
 ### Token Standards
 - **`ERC20BasicToken`**  
-  A standard ERC20 token implementation with basic functionalities like transfer, approve, and balance tracking.  
+  A standard ERC20 token with core functionalities like transfer, approve, and balance tracking.  
 - **`ERC20WithAllowance`**  
-  An ERC20 token with enhanced allowance features for delegated spending.  
+  An ERC20 token with enhanced allowance mechanisms for delegated spending.  
+- **`ERC20WithPermit`**  
+  An ERC20 token supporting gasless approvals via EIP-2612 permit signatures.  
+- **`ERC20WithSnapshot`**  
+  An ERC20 token with snapshot functionality for tracking balances at specific points in time.  
 - **`ERC721NFTContract`**  
   An ERC721 non-fungible token (NFT) contract for creating unique digital assets.  
 - **`ERC1155Contract`**  
-  An advanced ERC1155 multi-token standard contract supporting both fungible and non-fungible tokens.  
+  An ERC1155 multi-token standard contract supporting both fungible and non-fungible tokens.  
+- **`ERC1155WithRoyalties`**  
+  An ERC1155 contract with royalty support for creators (e.g., EIP-2981).  
+- **`ERC777Token`**  
+  An ERC777 token with advanced features like operator hooks and improved user interactions.  
 
 ### Financial Contracts
+- **`AMMPriceCalculator`**  
+  A contract for calculating prices in Automated Market Makers (AMMs).  
+- **`AmmContract`**  
+  A basic Automated Market Maker (AMM) contract for decentralized token swaps.  
 - **`CrowdsaleContract`**  
-  A contract for conducting a fixed-rate token sale, allowing users to buy ERC20 tokens with ETH.  
+  A contract for conducting fixed-rate token sales, enabling users to purchase ERC20 tokens with ETH.  
+- **`DecentralizedExchangeV1`**  
+  A decentralized exchange (DEX) contract for token trading with liquidity pools.  
+- **`FlashLoanMock`**  
+  A mock contract simulating flash loans for testing and development purposes.  
+- **`LendingPoolV1`**  
+  A lending pool contract for borrowing and lending assets on-chain.  
+- **`LiquidityPoolV1`**  
+  A liquidity pool contract for providing and managing liquidity in DeFi protocols.  
 - **`SimpleLendingContract`**  
-  A basic lending contract for borrowing and lending assets on-chain.  
-- **`TokenVestingContract`**  
-  A vesting contract to release tokens gradually over time to beneficiaries.  
+  A basic lending contract for straightforward borrowing and lending operations.  
 - **`StackingV1Contract`**  
   A staking contract allowing users to lock tokens and earn rewards.  
+- **`MultiTokenStacking`**  
+  A staking contract supporting multiple token types for flexible reward mechanisms.  
+- **`StakingWithRewardsContract`**  
+  A staking contract with customizable reward distribution for participants.  
+- **`SyntheticAssetTokenContract`**  
+  A contract for creating synthetic assets tied to real-world or on-chain values.  
+- **`TokenSwapContract`**  
+  A contract for direct token-to-token swaps with minimal dependencies.  
+- **`TokenVestingContract`**  
+  A vesting contract for gradual token release to beneficiaries over time.  
+- **`YieldFarmingV1`**  
+  A yield farming contract enabling users to earn rewards by providing liquidity.  
 - **`CharityDonationContract`**  
-  A contract for managing and distributing charitable donations transparently.  
+  A transparent contract for managing and distributing charitable donations.  
 - **`PayableContract`**  
   A simple contract demonstrating payable functions to receive Ether.  
 
-### Utility Contracts
+### NFT and Marketplace Contracts
+- **`NFTFractionalizer`**  
+  A contract for fractionalizing NFTs, allowing shared ownership of unique assets.  
+- **`NFTMarketplaceV1`**  
+  A decentralized marketplace for buying, selling, and trading NFTs.  
+- **`RentableNFTContract`**  
+  A contract enabling NFT rentals, allowing temporary use of digital assets.  
+
+### Governance and Security
 - **`AccessControlContract`**  
   A contract implementing role-based access control for secure permission management.  
+- **`EscrowContract`**  
+  A secure escrow contract to hold funds until predefined conditions are met.  
+- **`GovernanceProposalContract`**  
+  A contract for proposing and managing governance proposals in a DAO.  
+- **`GovernanceDAOContract`**  
+  A decentralized autonomous organization (DAO) contract for community governance.  
+- **`MultiSigWallet`**  
+  A multi-signature wallet requiring multiple approvals for enhanced transaction security.  
+- **`TimeLockContract`**  
+  A contract that locks funds or actions for a specified duration before execution.  
+- **`TimeLockDAOContract`**  
+  A timelock contract tailored for DAO governance, delaying execution of proposals.  
+- **`VotingContract`**  
+  A contract for on-chain voting, enabling transparent vote casting and tallying.  
+- **`GaslessVotingContract`**  
+  A voting contract optimized for gasless operations (e.g., via meta-transactions).  
+
+### Utility Contracts
+- **`BasicOracleConsumer`**  
+  A contract consuming external data feeds via an oracle (e.g., Chainlink).  
+- **`ChainlinkPriceFeed`**  
+  A contract integrating Chainlink’s price feeds for accurate on-chain pricing.  
+- **`EventLoggerContract`**  
+  A utility contract for logging and tracking on-chain events.  
+- **`FaucetContract`**  
+  A faucet contract for distributing test tokens or Ether on testnets.  
 - **`GasOptimizedCounter`**  
-  A gas-optimized counter contract for efficient on-chain counting operations.  
+  A gas-efficient counter contract for minimal-cost on-chain counting.  
 - **`AdvancedGasOptimizedCounter`**  
   An enhanced version of the gas-optimized counter with additional features.  
 - **`RandomNumberContract`**  
-  A contract for generating random numbers on-chain (e.g., using a secure oracle).  
-- **`FaucetContract`**  
-  A faucet contract to distribute test tokens or Ether on testnets.  
-
-### Governance and Security
-- **`MultiSigWallet`**  
-  A multi-signature wallet requiring multiple approvals for transactions, enhancing security for fund management.  
-- **`TimeLockContract`**  
-  A contract that locks funds or actions for a specified duration before they can be executed. Useful for delayed transactions or governance.  
-- **`VotingContract`**  
-  A contract implementing a voting system, allowing users to cast votes and tally results on-chain.  
-- **`EscrowContract`**  
-  A secure escrow contract to hold funds until predefined conditions are met.  
+  A contract for generating secure random numbers on-chain (e.g., via oracles).  
+- **`BatchTransferContract`**  
+  A contract for batch token or Ether transfers to multiple recipients in a single transaction.  
 
 ### Advanced Features
 - **`AuctionContract`**  
-  A contract for conducting on-chain auctions (e.g., English or Dutch auctions).  
+  A contract for conducting on-chain auctions (e.g., English auctions).  
+- **`DutchAuctionContract`**  
+  A contract for Dutch (reverse) auctions, where the price decreases over time.  
 - **`UpgradeableProxyContract`**  
-  A proxy contract enabling upgrades to logic contracts while preserving state (e.g., using a value tracker V1).  
+  A proxy contract enabling upgrades to logic contracts while preserving state.  
 
 **Note:** The `.DS_Store` file is a macOS system artifact and not part of the functional contracts.
 
@@ -79,11 +136,12 @@ This repository is organized into folders, each containing a specific type of sm
 ## Getting Started
 
 ### Prerequisites
-To work with these contracts, you'll need the following tools:
+To use or deploy these contracts, you’ll need:
 - [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) for package management.
-- [Truffle](https://www.trufflesuite.com/) or [Hardhat](https://hardhat.org/) for smart contract development and deployment.
-- [Metamask](https://metamask.io/) or another wallet for interacting with the Ethereum network.
-- An Ethereum testnet (e.g., Rinkeby, Ropsten) or a local blockchain like [Ganache](https://www.trufflesuite.com/ganache).
+- A development framework like [Truffle](https://www.trufflesuite.com/) or [Hardhat](https://hardhat.org/).
+- A wallet like [Metamask](https://metamask.io/) for interacting with Ethereum networks.
+- Access to an Ethereum testnet (e.g., Sepolia, Goerli) or a local blockchain like [Ganache](https://www.trufflesuite.com/ganache).
+- Optional: [Chainlink](https://chain.link/) for oracle-dependent contracts (e.g., `ChainlinkPriceFeed`, `RandomNumberContract`).
 
 ### Installation
 1. Clone the repository:
@@ -91,58 +149,63 @@ To work with these contracts, you'll need the following tools:
    git clone https://github.com/Zoriumorg/smart-contracts-library-evm.git
    cd smart-contracts-library-evm
    ```
-2. Navigate to the folder of the contract you want to use (e.g., `cd simple-storage-dapp`).
+2. Navigate to the desired contract folder (e.g., `cd ERC20BasicToken`).
 3. Install dependencies (if applicable):
    ```bash
    npm install
    ```
-4. Compile and deploy the contract using your preferred framework (e.g., Truffle or Hardhat). Refer to each folder’s documentation for specific instructions.
+4. Configure your development environment (e.g., update `truffle-config.js` or `hardhat.config.js` with network details).
+5. Compile and deploy the contract using your preferred framework. Example for Truffle:
+   ```bash
+   truffle compile
+   truffle migrate --network sepolia
+   ```
+
+Refer to individual contract folders for specific deployment instructions or dependencies.
 
 ## Contributing
 
-This is an open-source project, and we welcome contributions from the community! Here’s how you can get involved:
+We welcome contributions from the blockchain community! To contribute:
 1. Fork the repository.
-2. Create a new branch for your feature or bug fix:
+2. Create a new branch for your changes:
    ```bash
    git checkout -b feature/your-feature-name
    ```
-3. Add your smart contract or improve an existing one.
-4. Update the README or add a sub-README in the relevant folder with details about your contribution.
-5. Submit a pull request with a clear description of your changes.
+3. Add or improve a smart contract, ensuring it follows Solidity best practices.
+4. Include tests (e.g., using Mocha/Chai in Hardhat or Truffle).
+5. Update the README or add a sub-README in the relevant folder with details about your contribution.
+6. Submit a pull request with a clear description of your changes.
 
-### Guidelines
-- Ensure your code is well-commented and follows Solidity best practices.
-- Test your contracts thoroughly (e.g., using unit tests in Truffle or Hardhat).
-- Avoid committing sensitive data like private keys or API keys.
+### Contribution Guidelines
+- Write clear, commented code adhering to [Solidity style guides](https://docs.soliditylang.org/en/latest/style-guide.html).
+- Test contracts thoroughly for security and functionality.
+- Avoid committing sensitive data (e.g., private keys, API keys).
+- Ensure gas optimization where applicable, especially for utility contracts.
 
 ## Usage
 
-Feel free to explore the contracts, deploy them to a testnet, or integrate them into your own projects. Each folder contains a specific contract or dApp example—check the individual files or sub-READMEs (if available) for detailed instructions.
+Each contract folder contains a specific smart contract or dApp example. Explore the code, deploy to a testnet, or integrate into your projects. Check individual folders for sub-READMEs or deployment scripts with detailed instructions.
 
-For example, to deploy the `simple-storage-number` contract:
-1. Navigate to `simple-storage-number/`.
-2. Update the deployment script with your network details.
+For example, to deploy the `ERC721NFTContract`:
+1. Navigate to `ERC721NFTContract/`.
+2. Configure your network in the deployment script.
 3. Run:
    ```bash
-   truffle migrate --network rinkeby
+   hardhat run scripts/deploy.js --network sepolia
    ```
+
+## Security Considerations
+- **Audits**: These contracts are provided as-is and may not be audited. Conduct thorough testing and audits before deploying to mainnet.
+- **Gas Optimization**: Some contracts (e.g., `GasOptimizedCounter`) are optimized for gas efficiency, but always verify gas costs for your use case.
+- **Oracles**: Contracts like `BasicOracleConsumer` and `ChainlinkPriceFeed` rely on external oracles; ensure you use trusted providers like Chainlink.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code as long as you include the original license.
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code, provided the original license is included.
 
 ## Contact
 
-Have questions, suggestions, or want to collaborate? Reach out to us via GitHub Issues or connect with the Zoriumorg community!
+Have questions, ideas, or want to collaborate? Open a GitHub Issue, submit a pull request, or connect with the Zoriumorg community!
 
-Happy coding, and let’s build the future of decentralized applications together!
-```
-
----
-
-### Notes:
-1. **Organization**: I grouped the contracts into logical categories (dApps, Token Standards, Financial Contracts, etc.) to make the README more readable and professional.
-2. **Assumptions**: I assumed these are Solidity contracts for EVM and added generic setup instructions. If your repo uses a specific framework (e.g., only Hardhat), let me know, and I can adjust it.
-3. **Dates**: I omitted commit dates and messages (e.g., "2 weeks ago") as they’re not typically included in a README unless tracking a changelog, which can be added separately if desired.
-4. **Customization**: Replace "Zoriumorg" and the repo URL with your actual organization/username and repository details.
+Happy coding, and let’s build the decentralized future together!
 
