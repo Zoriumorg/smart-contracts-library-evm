@@ -132,6 +132,44 @@ The repository is organized into folders, each containing a specific smart contr
 **Note:** The `.DS_Store` file is a macOS system artifact and not part of the functional contracts.
 
 ---
+## Getting Started with Remix IDE
+
+All contracts in this repository have been deployed and tested using **Remix IDE**. Below are step-by-step instructions for compiling, deploying, and testing any contract in this library.
+
+### Prerequisites
+- A web browser with [Remix IDE](https://remix.ethereum.org/) access.
+- A wallet like [MetaMask](https://metamask.io/) configured with an Ethereum testnet (e.g., Sepolia, Goerli) or mainnet.
+- Testnet Ether (obtain from faucets like [Sepolia Faucet](https://sepoliafaucet.com/)).
+- Basic knowledge of Solidity and Ethereum development.
+
+### Step-by-Step Instructions for Each Contract
+1. **Open Remix IDE**:
+   - Navigate to [Remix IDE](https://remix.ethereum.org/).
+   - Ensure the Solidity compiler is enabled (default in Remix).
+
+2. **Load the Contract**:
+   - Clone this repository:
+     ```bash
+     git clone https://github.com/Zoriumorg/smart-contracts-library-evm.git
+     ```
+   - In Remix, go to the **File Explorer** tab.
+   - Click the **Upload File** button and select the `.sol` file from the desired contract folder (e.g., `ERC20BasicToken/ERC20BasicToken.sol`).
+
+3. **Compile the Contract**:
+   - In the **Solidity Compiler** tab:
+     - Select the appropriate Solidity version (check the contract’s comments for the required version, e.g., `^0.8.0`).
+     - Click **Compile [ContractName].sol**.
+     - Ensure no compilation errors appear.
+
+4. **Deploy the Contract**:
+   - Go to the **Deploy & Run Transactions** tab.
+   - Select your environment:
+     - **JavaScript VM** (for local testing).
+     - **Injected Provider - MetaMask** (for testnet/mainnet deployment).
+   - Connect MetaMask and ensure it’s set to the desired network (e.g., Sepolia).
+   - If the contract requires constructor parameters (e.g., token name, supply for `ERC20BasicToken`), provide them in the input fields next to the **Deploy** button.
+   - Click **Deploy** and confirm the transaction in MetaMask.
+
 
 ## Getting Started
 
