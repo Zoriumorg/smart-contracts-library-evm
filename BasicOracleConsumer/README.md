@@ -95,7 +95,7 @@ This project demonstrates a decentralized application (dApp) for buying bus tick
 **Screenshot of Deployed Contracts**:
 - ![Deployed Contracts](./Ticketseller.png)  
 - ![Deployed Contracts](./Rewardoracle.png)  
-  *(Placeholder: Insert screenshot showing `RewardsOracle` at `0x2163...9f2b` and `TicketSeller` at `0x12b...53363` in Remix’s Deployed Contracts section.)*
+  
 
 ---
 
